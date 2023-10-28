@@ -8,8 +8,12 @@ const server = http.createServer(routes.handler);
 
 server.listen(3000);
 
-//questions 
-// Did you understand event loop ? Please explain it in your words if you did.If you didnt please raise a question in next class.
-// The event loop is what allows Node.js to perform non - blocking I / O operations — despite the fact that JavaScript is single - threaded — by offloading operations to the system kernel whenever possible.
+// question
+// What problem does nodemon solve ?
+//     Nodemon is a tool that helps with the development of Node.js applications by automatically restarting the node application when file changes in the directory are detected.This means that you do not have to stop and restart your applications in order for your changes to take effect.You can simply write code, and test your application a few seconds later.
 
-// Since most modern kernels are multi - threaded, they can handle multiple operations executing in the background.When one of these operations completes, the kernel tells Node.js so that the appropriate callback may be added to the poll queue to eventually be executed.
+// When would you use --save-dev and --save?
+// --save flag is used to save a package as a production dependency. Production dependencies are the packages that your application needs to run in a production environment, meaning the packages that are required for your application to function properly when it's deployed.
+
+// --save-dev  flag is used to save a package as a development dependency. Development dependencies are the packages that you need during development, but they are not required for your application to run in a production environment. Typically, development dependencies include tools for testing, building, or other development-related tasks.
+
